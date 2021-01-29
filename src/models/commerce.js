@@ -24,6 +24,10 @@ const commerce = sequelize.define('commerce', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    fundation_date: {
+        type: DataTypes.DATE,
+        allowNull: false
+    },
     createdAt: {
         type: DataTypes.DATE,
         allowNull: false,
