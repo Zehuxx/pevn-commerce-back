@@ -116,7 +116,8 @@ let getCommerceById = async(req, res) => {
 
 let updateCommerce = async(req, res) => {
     try {
-        let { id, id_cst, name, owner_name, address, fundation_date } = req.body;
+        let { id_cst, name, owner_name, address, fundation_date } = req.body;
+        let { id } = req.params;
         let commerce = await models.commerce.findOne({
             where: {
                 id
