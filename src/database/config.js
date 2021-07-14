@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('pevn_commerces', 'postgres', 'postgres', {
-    host: 'localhost',
+    host: 'db', //hace referencia al service que  se definio en docker-compose.yml
     dialect: 'postgres',
     port: 5432,
     pool: {

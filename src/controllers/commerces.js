@@ -157,7 +157,7 @@ let deleteCommerce = async(req, res) => {
         });
 
         if (commerce) {
-            res.status(200).json({ message: "El comercio fue eliminado exitosamente." });
+            res.status(200).json({ message: "El comercio fue eliminado exitósamente." });
         } else {
             res.status(404).json({ message: "No se encontró información." });
         }
